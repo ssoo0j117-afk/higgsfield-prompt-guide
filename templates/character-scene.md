@@ -85,34 +85,29 @@ sharp, angular, dark, or scary anywhere in the scene.
 
 ---
 
-## 공통 Negative (모든 씬에 항상 포함)
+## 공통 Negative (모든 씬에 항상 포함 — 짧게 유지)
 
 ```
-extra characters, additional people, duplicated characters, unstable composition,
-tilted framing, scattered layout, floating characters, cropped characters,
-separated fingers, individual toes, detailed hand anatomy, five fingers, claws,
-distorted faces, changed character design, wrong proportions, stretched proportions,
-elongated legs, visible neck, photorealistic humans, realistic anatomy,
-scary expression, threatening pose, sharp angular shapes, dark or eerie lighting,
-muted or dull colors, washed-out colors, text watermark, logo, low quality,
-jpeg artifacts, cluttered background, harsh lighting
+extra characters, duplicated characters, unstable framing, fingers, toes,
+visible neck, head smaller than body, nose, blush, scary expression,
+text, watermark, low quality
 ```
 
-**3D 씬에서만 추가:** `high gloss, glossy plastic, mirror-like specular highlight, wet-look shine, hard reflection, chrome-like surface`
+**3D 씬에서만 추가:** `glossy, mirror reflection`
 
-## 텍스트/말풍선 영역 Negative (해당 씬에 텍스트 요소가 있을 때 항상 추가)
+> ⚠️ **Negative는 절대 길게 늘어놓지 않는다.** 2026-09-08 실측: 동의어를 여러 개 나열한 긴 Negative(예: `separated fingers, individual toes, detailed hand anatomy, five fingers, claws`)를 쓴 씬에서 오히려 손가락이 잘 생기고, 캐릭터 시그니처(안테나 곡률, 눈 모양, 귀 위치 등)가 흐트러지는 현상이 반복 관찰됐다. nano-banana 계열 모델은 진짜 negative embedding이 아니라 Negative 섹션도 텍스트로 읽기 때문에, 단어를 반복 나열할수록 그 단어에 대한 "주의"만 더 끌 수 있다. → **Negative는 핵심 단어 위주로 짧게, 원하는 상태는 캐릭터 블록·Critical conditions에 강한 긍정문으로 서술**하는 쪽을 기본 전략으로 삼는다.
+
+## 텍스트 영역 Negative (해당 씬에 텍스트 요소가 있을 때 추가)
 
 ```
-rendered text, letters, words, Korean characters, English characters, numbers,
-gibberish text, placeholder text, garbled text, illegible text inside bubble,
-watermark text, random symbols inside bubble
+text, letters, words inside the reserved area
 ```
 
-## 캐릭터별 필수 Negative (해당 캐릭터 등장 시 `company-characters.md`에서 가져와 추가)
-- 다정파: `wrong ear shape, ear color swapped, missing inner ear patch, wrong hood color`
-- 기분파: `missing polka dots, wrong ear shape, plain ear without pattern, missing forehead swirl`
-- 분석파: `no glasses, missing glasses, glasses removed, changed ear position, ear stripe missing, multiple visible teeth`
-- 인상파: `fully open eyes, round wide eyes, surprised eyes, curved eyebrows, missing ear stripes, missing flame hair tuft`
+## 캐릭터별 필수 Negative (해당 캐릭터 등장 시 `style/characters.md`에서 가져와 추가 — 각 캐릭터당 1~2개로 압축)
+- 다정파: `blush`
+- 기분파: `faded polka dots, ear at side of head`
+- 분석파: `straight antenna, no glasses`
+- 인상파: `flame, curved happy eyes`
 
 ---
 
