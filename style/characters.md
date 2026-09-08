@@ -8,9 +8,9 @@
 
 | 캐릭터 | 2D Element ID | 3D Element ID |
 |---|---|---|
-| 다정파 | `0505220e-441d-4460-a443-cb2e5175e8b2` | `0068c3c9-8e50-40a9-907d-453aed2f855e` |
-| 기분파 | `88c417cd-693f-49fe-8999-06ff912cb9b9` | `0bb1246c-5e9b-4ac3-828b-e586f5f93fc3` |
-| 분석파 | `94fe7ad2-8b83-40af-997b-d20644f3941c` | `73a3f49e-ea1b-44f3-9488-72449e474782` (v2, 귀 줄무늬 추가) |
+| 다정파 | `0505220e-441d-4460-a443-cb2e5175e8b2` | `e6adcff1-bad0-48c5-8241-197da97bf2d7` (v2, 블러셔 제거) |
+| 기분파 | `88c417cd-693f-49fe-8999-06ff912cb9b9` | `9beb23f7-f94c-4cc6-96be-aeaec1af5c9f` (v2, 땡땡이 무늬 강화) |
+| 분석파 | `94fe7ad2-8b83-40af-997b-d20644f3941c` | `00e2d49f-490a-4f0a-9982-8399564d5dc6` (v3, 귀 줄무늬 + 안경테 진하게) |
 | 인상파 | `c1fde0e3-6de2-4ebb-8689-724c28b3716d` | `db8b543d-fbd4-4f7f-a15e-bb381746d6ef` |
 
 `characters.md`의 실측 결론(→ 텍스트만으로는 비율이 절대 안 잡히고, Element 바인딩이 유일하게 확실한 방법)이 이 4종에도 그대로 적용된다. 아래 각 캐릭터 블록을 사용할 때는 프롬프트 맨 앞에 렌더 방식에 맞는 Element ID를 `<<<element-id>>>` 토큰으로 바인딩하고, 영문 블록을 그대로 병기한다 (이중 안전장치).
@@ -85,7 +85,9 @@ lighting. Highlights are soft and subtle, never sharp or mirror-like.
 ## 3. 캐릭터별 영문 외형 블록
 
 ### 다정파 (DAJEONG)
-Element ID: 2D `0505220e-441d-4460-a443-cb2e5175e8b2` / 3D `0068c3c9-8e50-40a9-907d-453aed2f855e`
+Element ID: 2D `0505220e-441d-4460-a443-cb2e5175e8b2` / 3D `e6adcff1-bad0-48c5-8241-197da97bf2d7` (v2)
+
+> ⚠️ 구버전 3D Element(`0068c3c9-...`)는 여러 캐릭터 동시 등장 씬에서 없던 볼 블러셔가 계속 생기는 문제가 있었다. 2026-09-08에 블러셔를 제거한 v2(`e6adcff1-...`, 이름 `다정파-3D-v2`)로 재등록. **앞으로는 v2 ID 사용.**
 
 ```
 **DAJEONG (pink, affection type):** hood/outer color warm pink `#F582AF`,
@@ -103,7 +105,9 @@ than GIBUN's (roughly 15-25% down from the top of the block).
 - **시행착오 (2026-09-08):** 여러 캐릭터 동시 등장 씬에서 다정파에게 없던 분홍 볼 블러셔가 생기는 문제 발생 (분석파의 주근깨가 번진 것으로 추정). → 블록 본문에 "NOTHING else: no nose, no blush"를 명시적으로 못박고 Negative에도 `blush` 추가.
 
 ### 기분파 (GIBUN)
-Element ID: 2D `88c417cd-693f-49fe-8999-06ff912cb9b9` / 3D `0bb1246c-5e9b-4ac3-828b-e586f5f93fc3`
+Element ID: 2D `88c417cd-693f-49fe-8999-06ff912cb9b9` / 3D `9beb23f7-f94c-4cc6-96be-aeaec1af5c9f` (v2)
+
+> ⚠️ 구버전 3D Element(`0bb1246c-...`)는 귀 안 땡땡이 무늬가 너무 흐려서 씬 생성 시 거의 안 보이는 문제가 있었다. 2026-09-08에 땡땡이를 크고 진하게 강화한 v2(`9beb23f7-...`, 이름 `기분파-3D-v2`)로 재등록. **앞으로는 v2 ID 사용.**
 
 ```
 **GIBUN (yellow/orange, mood type):** hood/outer color `#FFD52B`, face patch
@@ -127,15 +131,19 @@ the four characters, starting roughly 10-15% down from the top of the block.
 - **시행착오 (2026-09-08):** "귀 모양이 이상하다"는 피드백 발생 — 원인은 귀 위치를 "옆(side)"으로만 서술해서 일반 동물 귀처럼 처졌던 것으로 추정. → 정수리 근처에서 위/바깥으로 뻗는 안테나형 부착 위치를 명시적으로 추가. 땡땡이 무늬도 흐려지는 문제가 있어 "항상 선명하게" 문구 추가.
 
 ### 분석파 (BUNSEOK)
-Element ID: 2D `94fe7ad2-8b83-40af-997b-d20644f3941c` / 3D `73a3f49e-ea1b-44f3-9488-72449e474782` (v2)
+Element ID: 2D `94fe7ad2-8b83-40af-997b-d20644f3941c` / 3D `00e2d49f-490a-4f0a-9982-8399564d5dc6` (v3)
 
-> ⚠️ 기존 3D Element(`54ff10cb-f287-4dc9-8fb6-da0a0c8a3cbc`)는 **귀에 줄무늬가 없는 구버전**이었다.
-> 시그니처 락 표에는 "귀의 위치와 모양 유지, 줄무늬 무늬 유지"라고 돼 있었지만 실제 등록된 Element 자체에 줄무늬가 없어서 생성 결과에도 계속 반영이 안 됐던 것 — 2026-09-08에 귀 줄무늬를 추가한 새 버전(`73a3f49e-...`, 이름 `분석파-3D-v2`)을 생성해 재등록했다. **앞으로는 이 v2 ID를 사용한다.** 구버전 ID는 참고용으로만 남겨둠.
+> ⚠️ 버전 이력:
+> - 최초 Element(`54ff10cb-...`)는 **귀에 줄무늬가 없는 구버전** — 시그니처 락 표엔 "줄무늬 유지"라고 돼 있었지만 실제 Element 자체에 줄무늬가 없어서 생성마다 계속 반영이 안 됐음.
+> - v2(`73a3f49e-...`)에서 귀 줄무늬 추가.
+> - v3(`00e2d49f-...`, 이름 `분석파-3D-v3`)에서 안경테 색상을 더 진한 네이비 `#0A2540`로 보정 (기존 `#0F4155`가 너무 연하다는 피드백).
+> **앞으로는 v3 ID를 사용한다.**
 
 ```
 **BUNSEOK (teal/green, analytical type):** hood/outer color `#40ADA3`, face
-patch `#A0D7D0`. **ALWAYS wears large round glasses with a dark navy frame
-`#0F4155`** — never removed in any generation. **Antenna:** a thin stalk
+patch `#A0D7D0`. **ALWAYS wears large round glasses with a dark, near-black
+navy frame `#0A2540`** (darker/more saturated than earlier versions) — never
+removed in any generation. **Antenna:** a thin stalk
 rising from the top of the head that is ALWAYS bent into one smooth curve
 (like a wave or a hook) — it must NEVER be drawn straight or rigid — ending in
 a small round ball tip. **Ears:** small rounded oval lobes attached to the
