@@ -89,8 +89,8 @@ sharp, angular, dark, or scary anywhere in the scene.
 
 ```
 extra characters, duplicated characters, unstable framing, fingers, toes,
-visible neck, head smaller than body, nose, blush, scary expression,
-text, watermark, low quality
+visible neck, head smaller than body, nose, blush, long arms,
+stretched arms, scary expression, text, watermark, low quality
 ```
 
 **3D 씬에서만 추가:** `glossy, mirror reflection`

@@ -34,12 +34,19 @@ nose of any kind — the area between the eyes and mouth stays completely bare,
 no nose shape, no nostrils, no nose shading. There is no cheek blush of any
 kind unless a specific character's block below says otherwise. Two short, thin
 oval limbs, in a tone darker than the main body color, are attached
-symmetrically left and right at the base of the block.
+symmetrically left and right at the base of the block. **Limb length is SHORT
+and FIXED, matching the reference element exactly — each arm is roughly the
+same length as the head is tall, never longer. This length stays the same in
+EVERY pose, including raised-arm/cheering poses — raising an arm changes its
+ANGLE, never its LENGTH. Arms must never stretch, elongate, or extend beyond
+their normal short proportions to reach up, reach out, or hold something.**
 ```
 
 **항상 적용되는 제약 (4종 공통 — Negative는 짧고 핵심만):**
 - 머리:몸통 비율 2:1 고정, 목 없음 (Negative: `head smaller than body, visible neck`)
 - 코 없음, 캐릭터별로 명시 안 된 블러셔 없음 (Negative: `nose, blush`)
+- **팔다리 길이 고정 — 포즈가 바뀌어도(만세, 점프 등) 늘어나면 안 됨** (Negative: `long arms, stretched arms, elongated limbs, oversized arms`)
+- **시행착오 (2026-09-08):** 만세 포즈 씬에서 팔이 원래보다 훨씬 길게 늘어나는 문제 발생. → 공통 구조 규칙에 "팔 길이는 머리 높이 정도로 고정, 포즈는 각도만 바뀌고 길이는 안 바뀐다"를 명시적으로 추가.
 
 > ⚠️ **Negative는 짧게 유지한다.** 2026-09-08 실측: Negative 리스트가 길고 동의어를 중복 나열할수록(예: `separated fingers, individual toes, detailed hand anatomy, five fingers, claws`) 오히려 그 요소가 더 잘 생성되는 역효과가 관찰됐다 (nano_banana 계열은 진짜 negative embedding이 아니라 텍스트로 읽기 때문으로 추정). Negative는 핵심 단어 1~3개로 짧게, 대신 **Critical conditions와 블록 본문에서 원하는 상태를 강하게(긍정문으로) 서술**하는 쪽에 무게를 둔다.
 
