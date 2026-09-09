@@ -78,10 +78,14 @@ toy quality, clean simple background unless scene specifies otherwise.
 
 ### 공통 (2D/3D 모두 항상 추가)
 ```
-Overall bright, cheerful, saturated-but-soft color palette; round, soft, huggable
-silhouettes on every character and prop; warm and friendly mood throughout; nothing
-sharp, angular, dark, or scary anywhere in the scene.
+Overall bright, cheerful, HIGHLY SATURATED, vivid and punchy color palette —
+vibrant, not muted, not pastel, not washed-out; round, soft, huggable silhouettes
+on every character and prop; warm and friendly mood throughout; nothing sharp,
+angular, dark, or scary anywhere in the scene.
 ```
+**Negative 추가 (항상):** `muted colors, dull colors, washed-out colors, low saturation, pastel colors`
+
+> ⚠️ **시행착오 (2026-09-09):** 기본 색감이 "saturated-but-soft"라고만 쓰면 결과물이 채도가 낮고 흐릿하게 나온다는 피드백. → "HIGHLY SATURATED, vivid and punchy"로 강하게 명시하고 Negative에도 `muted, dull, washed-out, low saturation, pastel`을 상시 추가.
 
 ---
 
