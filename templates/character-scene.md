@@ -78,14 +78,19 @@ toy quality, clean simple background unless scene specifies otherwise.
 
 ### 공통 (2D/3D 모두 항상 추가)
 ```
-Overall bright, cheerful, HIGHLY SATURATED, vivid and punchy color palette —
-vibrant, not muted, not pastel, not washed-out; round, soft, huggable silhouettes
-on every character and prop; warm and friendly mood throughout; nothing sharp,
-angular, dark, or scary anywhere in the scene.
+Overall EXTREMELY VIVID, MAXIMUM SATURATION, bold punchy poster-bright color
+palette — think saturated candy-bright primary and secondary hues, richly
+saturated background colors, richly saturated character body colors, richly
+saturated prop colors — nothing desaturated, nothing muted, nothing pastel,
+nothing washed-out anywhere in the scene, every color pushed toward its most
+vivid, eye-catching version while staying within the established brand hex
+colors; round, soft, huggable silhouettes on every character and prop; warm
+and friendly mood throughout; nothing sharp, angular, dark, or scary anywhere
+in the scene.
 ```
-**Negative 추가 (항상):** `muted colors, dull colors, washed-out colors, low saturation, pastel colors`
+**Negative 추가 (항상):** `muted colors, dull colors, washed-out colors, low saturation, pastel colors, desaturated, faded colors, grayish tones`
 
-> ⚠️ **시행착오 (2026-09-09):** 기본 색감이 "saturated-but-soft"라고만 쓰면 결과물이 채도가 낮고 흐릿하게 나온다는 피드백. → "HIGHLY SATURATED, vivid and punchy"로 강하게 명시하고 Negative에도 `muted, dull, washed-out, low saturation, pastel`을 상시 추가.
+> ⚠️ **시행착오 (2026-09-09 → 2026-09-10 재조정):** "HIGHLY SATURATED, vivid and punchy" 정도로 1차 수정했으나 여전히 흐리다는 피드백이 다시 나왔다. → "EXTREMELY VIVID, MAXIMUM SATURATION, bold punchy poster-bright... every color pushed toward its most vivid version"까지 훨씬 강하게 재작성. 색감 피드백은 한 번에 안 끝날 수 있으니, 다시 흐리다는 말이 나오면 이 문구보다 한 단계 더 세게 조정할 것. 기준 이미지는 `prompts/2026-09-10-sky-banner-4characters.md` 참고.
 
 ---
 
@@ -186,6 +191,8 @@ color or 3D soft-matte — never a sharp mirror-like metallic finish).
 - 2D는 앱/웹 UI에 맞춰 플랫 벡터, 3D는 굿즈용 무광 피규어로 완전히 다른 렌더 모듈 — Style 섹션에서 한쪽만 선택해서 사용, 섞지 않는다.
 - 주인공(핵심 액션을 하는 캐릭터) 먼저 서술하고 배경은 나중에 — 순서가 바뀌면 주인공이 생성에서 빠지는 경향 (원본 실측).
 - 캐릭터를 가구 위에 올리지 않는다 → "All characters stand on the FLOOR" + Negative `character on desk/furniture`.
+- **중복 캐릭터 방지**: 소품(탈것 등)에 탄 캐릭터 주변에 같은 캐릭터가 작게 한 번 더 생기는 버그가 관찰됨. → Critical conditions 맨 앞에 "1 A + 1 B + 1 C + 1 D = N명" 식 덧셈 문장을 넣고 Negative에 `duplicate character, second {NAME}, cloned character`를 구체적으로 추가.
+- **소품이 캐릭터 몸 색에 묻히는 문제**: 소품 색이 들고 있는 캐릭터의 몸 색과 비슷하면 소품이 잘 안 보인다. → 소품 색을 캐릭터 몸 색과 대비되는 색으로 명시하고, 크기 기준을 "머리 너비만큼" 처럼 숫자/비유로 제시.
 
 ---
 
