@@ -174,9 +174,14 @@ one small white tooth is visible. No nose.
 ### 인상파 (INSANG)
 Element ID: 2D `c1fde0e3-6de2-4ebb-8689-724c28b3716d` / 3D `db8b543d-fbd4-4f7f-a15e-bb381746d6ef`
 
+> ⚠️ **2026-09-10: 색상 보정.** 사용자가 첨부한 레퍼런스(초록 인형 안고 있는 인상파) 기준으로
+> hood `#6350B2`→`#7C5FDB`(더 밝고 선명한 보라), face patch `#B199E4`→`#C9BAF7`(더 밝은 라벤더)로 변경.
+> 귀 줄무늬도 톤에 맞춰 `#583799~#4E2A91` → `#6B46C4~#5A35A8`로 함께 밝게 보정. **이 레퍼런스가 인상파 색상의 최신 기준.**
+
 ```
-**INSANG (purple, distinct-personality type):** hood/outer color `#6350B2`,
-face patch `#B199E4`. **Hair:** a small cluster of 2-3 tall POINTED hair peaks
+**INSANG (purple, distinct-personality type):** hood/outer color `#7C5FDB`
+(bright vivid purple — brighter/more saturated than earlier muted purple),
+face patch `#C9BAF7` (light bright lavender). **Hair:** a small cluster of 2-3 tall POINTED hair peaks
 rising from the crown — one slightly taller center peak curving gently to one
 side, flanked by two shorter pointed peaks. Describe this ONLY as pointed hair
 peaks, solid flat matte purple, identical material to the rest of the hood —
@@ -184,7 +189,7 @@ NOT fire, NOT flames, NO flame texture, NO glow, NO orange/red/yellow color of
 any kind in the hair. **Ears:** long drooping oval/teardrop-shaped ears
 hanging down at the sides of the head past the widest point of the head — same
 general silhouette and attachment position (mid-head height) as the other
-three characters' ears — striped in dark purple tones `#583799` to `#4E2A91`,
+three characters' ears — striped in purple tones `#6B46C4` to `#5A35A8` (brighter than earlier versions),
 stripe pattern and position preserved at all times. **Eyes are ALWAYS in a
 half-closed, sassy/unimpressed shape: both eyes read as flat, slightly
 downward-angled slits, paired with a straight single-line eyebrow.** This is
