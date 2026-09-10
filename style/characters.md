@@ -145,10 +145,12 @@ Element ID: 2D `94fe7ad2-8b83-40af-997b-d20644f3941c` / 3D `00e2d49f-490a-4f0a-9
 > - v2(`73a3f49e-...`)에서 귀 줄무늬 추가.
 > - v3(`00e2d49f-...`, 이름 `분석파-3D-v3`)에서 안경테 색상을 더 진한 네이비 `#0A2540`로 보정 (기존 `#0F4155`가 너무 연하다는 피드백).
 > **앞으로는 v3 ID를 사용한다.**
+> - **2026-09-10: 몸통 색상 보정.** 사용자가 첨부한 레퍼런스 이미지(돋보기 든 분석파) 기준으로 hood `#40ADA3`→`#2FC1C2`(더 밝고 선명한 터콰이즈), face patch `#A0D7D0`→`#B3EDE8`(더 밝은 민트 아쿠아)로 변경. **이 레퍼런스가 분석파 색상의 최신 기준.**
 
 ```
-**BUNSEOK (teal/green, analytical type):** hood/outer color `#40ADA3`, face
-patch `#A0D7D0`. **ALWAYS wears large round glasses with a dark, near-black
+**BUNSEOK (teal/green, analytical type):** hood/outer color `#2FC1C2` (bright vivid turquoise —
+brighter/more saturated than earlier muted teal), face patch `#B3EDE8` (light
+minty aqua). **ALWAYS wears large round glasses with a dark, near-black
 navy frame `#0A2540`** (darker/more saturated than earlier versions) — never
 removed in any generation. **Antenna:** a thin stalk
 rising from the top of the head that is ALWAYS bent into one smooth curve
