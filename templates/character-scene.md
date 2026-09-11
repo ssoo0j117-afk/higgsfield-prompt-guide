@@ -78,19 +78,23 @@ toy quality, clean simple background unless scene specifies otherwise.
 
 ### 공통 (2D/3D 모두 항상 추가)
 ```
-Overall EXTREMELY VIVID, MAXIMUM SATURATION, bold punchy poster-bright color
-palette — think saturated candy-bright primary and secondary hues, richly
-saturated background colors, richly saturated character body colors, richly
-saturated prop colors — nothing desaturated, nothing muted, nothing pastel,
-nothing washed-out anywhere in the scene, every color pushed toward its most
-vivid, eye-catching version while staying within the established brand hex
-colors; round, soft, huggable silhouettes on every character and prop; warm
-and friendly mood throughout; nothing sharp, angular, dark, or scary anywhere
-in the scene.
+Overall EXTREMELY VIVID, MAXIMUM SATURATION, HIGH BRIGHTNESS, bold punchy
+poster-bright color palette — think saturated candy-bright primary and
+secondary hues under bright, clean, HIGH-KEY lighting (NOT dim, NOT moody,
+NOT a soft low-lit glow). Richly saturated AND brightly lit background
+colors, character body colors, and prop colors — nothing desaturated,
+nothing muted, nothing pastel, nothing washed-out, nothing dim or shadowy
+anywhere in the scene. Every color pushed toward its most vivid, brightest,
+eye-catching version while staying within the established brand hex colors.
+Backgrounds default to clean bright white, bright saturated flat colors, or
+bright daylight — NOT warm dim gradients, NOT soft glowing "cozy" vignettes
+unless a scene explicitly asks for a nighttime/cozy mood. Round, soft,
+huggable silhouettes on every character and prop; warm and friendly mood
+throughout; nothing sharp, angular, dark, or scary anywhere in the scene.
 ```
-**Negative 추가 (항상):** `muted colors, dull colors, washed-out colors, low saturation, pastel colors, desaturated, faded colors, grayish tones`
+**Negative 추가 (항상):** `muted colors, dull colors, washed-out colors, low saturation, pastel colors, desaturated, faded colors, grayish tones, dim lighting, moody lighting, low-key lighting, dark background, gloomy colors, mustard tones, dingy colors`
 
-> ⚠️ **시행착오 (2026-09-09 → 2026-09-10 재조정):** "HIGHLY SATURATED, vivid and punchy" 정도로 1차 수정했으나 여전히 흐리다는 피드백이 다시 나왔다. → "EXTREMELY VIVID, MAXIMUM SATURATION, bold punchy poster-bright... every color pushed toward its most vivid version"까지 훨씬 강하게 재작성. 색감 피드백은 한 번에 안 끝날 수 있으니, 다시 흐리다는 말이 나오면 이 문구보다 한 단계 더 세게 조정할 것. 기준 이미지는 `prompts/2026-09-10-sky-banner-4characters.md` 참고.
+> ⚠️ **시행착오 (2026-09-09 → 2026-09-10 → 2026-09-11 재조정):** "HIGHLY SATURATED" → "EXTREMELY VIVID, MAXIMUM SATURATION"까지 올렸는데도 "명도가 어둡다/우울하다"는 피드백이 다시 나왔다. 원인 분석: **채도(saturation)만 강조하고 명도(brightness/value)는 따로 명시하지 않아서**, 배경을 "soft glowing warm gradient"처럼 묘사하면 채도는 있어도 전체적으로 어둡고 칙칙하게(예: 별이 겨자색으로) 나오는 문제가 있었다. → Style 블록에 **"HIGH BRIGHTNESS", "HIGH-KEY lighting", "NOT dim, NOT moody"**를 채도 문구와 별도로 명시하고, 기본 배경을 "clean bright white / bright saturated flat color / bright daylight"로 지정 (따뜻한 은은한 그라데이션은 명시적으로 요청했을 때만). Negative에도 `dim lighting, moody lighting, dark background, gloomy colors, mustard tones`를 추가. **채도와 명도는 별개로 챙겨야 한다** — 앞으로 색감 피드백이 오면 어느 쪽(채도 vs 명도) 문제인지 구분해서 조정할 것.
 
 ---
 
